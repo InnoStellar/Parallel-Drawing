@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        .tools a
+        {
+            text-decoration: none;
+        }
+        #colors_sketch
+        {
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+      <center>
+    <div class="tools">
+        <a href="#colors_sketch" data-tool="marker">Marker</a> <a href="#colors_sketch" data-tool="eraser">
+            Eraser</a>
+        <a href="javascript:save();" id="sve">Save</a>
+    </div>
+    <br />
+    <canvas id="colors_sketch" style="width:80%; height:200px;">
+    </canvas>
+    <br><br>
+    <div id="imgs"></div>
+    </center>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/mobomo/sketch.js/master/lib/sketch.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>
